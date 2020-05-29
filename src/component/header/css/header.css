@@ -1,0 +1,142 @@
+header{
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to left top,
+            rgba(14, 236, 151, 0.7) ,
+            rgba(104, 84, 229, 0.7)),
+            url('../../../assets/img/home-225.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  overflow-x: hidden;
+}
+.hero-actions{
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+
+}
+.sec-heading h3{
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 20px;
+    letter-spacing: 1px
+
+}
+.pri-heading h1{
+  font-size: 32px;
+  font-weight: 700;
+  margin: -5px 0 15px 0;
+}
+
+.hero-para{
+  width: 60%;
+  min-width: 200px;
+  text-align: center;
+}
+.hero-para p{
+  margin: auto;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 18px;
+  margin: 0 0 40px 0;
+}
+.hero-btn-section{
+  display: flex;
+  width: 60%;
+  min-width: 260px;
+  text-align: center;
+  justify-content: center;
+}
+.btn{
+  border:none;
+  outline: none;
+  color: white;
+  width: 130px;
+  height: 33px;
+  font-size: 9px;
+  font-weight: 700;
+  border-radius: 200px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.blue-btn{
+  margin-right: 20px;
+  background-color: rgba(104, 84, 229, 1);
+}
+.blue-btn:hover{
+  background-color: rgba(14, 236, 151, 1)
+}
+.green-btn{
+  background-color: rgba(14, 236, 151, 1)
+}
+.green-btn:hover{
+  background-color: rgba(104, 84, 229, 1);
+}
+.down-btn{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;justify-content: center;
+  align-items: center;
+  color: rgba(104, 84, 229, 1);
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -20px;
+  animation: sdb05 1.5s infinite;
+  box-sizing: border-box;
+}
+
+
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+
+/*************************** for middle screen ***************************/
+
+@media (min-width: 800px) {
+  .hero-para{
+    max-width: 350px;
+  }
+}
+
+/************************** for large screen *****************************/
+@media (min-width: 1150px) {
+  header{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to left top,
+              rgba(14, 236, 151, 0.2) ,
+              rgba(104, 84, 229, 0.3)),
+              url('../../../assets/img/home-3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    overflow-x: hidden;
+  }
+  .hero-actions{
+    width: 45%;
+    text-align: left;
+  }
+
+}
